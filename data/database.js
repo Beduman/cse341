@@ -3,7 +3,8 @@ dotenv.config();
 
 const MongoClient = require('mongodb').MongoClient;
 
-let database
+let database;
+
 const initDb = (callback) => {
     if(database){
         console.log('db is already initialized');
